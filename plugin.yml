@@ -1,0 +1,7 @@
+name: eNametagV4
+version: 4.0.0
+main: me.elias.enametag.central.Main
+authors: [EliCodes]
+commands:
+  enametag:
+    aliases: [ent]

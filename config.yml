@@ -1,0 +1,56 @@
+# Aqui vocÃª pode criar a tag que quiser e quantas quiser!
+# O formato Ã© assim: '<prefixo>,<sufixo>,<nome da tag>,<ordem no tab>,<permissao>,<nome no comando>,<nome no comando>,<nome no comando>'
+# A vÃ­rgula Ã© MUITO importante, pois irÃ¡ separar cada parte como explicado acima.
+# No <nome no comando>, voce pode criar QUANTOS QUISER, entÃ£o sim.. pode ser infinito.
+# VocÃª pode adicionar mais tags, adicionando mais linhas seguindo o padrÃ£o.
+# A ordem do alfabeto, indica a ordem no tab, entÃ£o a (1Â°), b (2Â°), c (3Â°)... e assim vai.
+# *PARA FAZER A TAG NÃƒO NECESSITAR PERMISSAO, COLOQUE 'none' NA PERMISSAO DELA COMO ESTÃ� NA MEMBRO (ULTIMA)*
+NameTags:
+  TagsList:
+    - '&4[CEO] ,,&4CEO,a,tag.ceo,ceo,dono,owner,master'
+    - '&3[DEV] ,,&3DEV,b,tag.dev,dev,developer,coder,programmer'
+    - '&c[COORD] ,,&cCOORD,c,tag.coord,coord,coordenador'
+    - '&c[GER] ,,&cGER,d,tag.ger,ger,gerente'
+    - '&c[SUBGER] ,,&cSUBGER,e,tag.subger,subger,subgerente,semiger,semigerente'
+    - '&c[ADMIN] ,,&cADMIN,f,tag.admin,admin,administrador,adm'
+    - '&5[MOD&f+&5] ,,&5MOD&f+&5,g,tag.mod+,moderador+,mod+,modplus,moderadorplus'
+    - '&5[MOD] ,,&5MOD,h,tag.mod,mod,moderador'
+    - '&d[TRIAL] ,,&dTRIAL,i,tag.trial,trial,trialmod'
+    - '&d[AJD] ,,&dAJD,j,tag.ajd,ajudante,helper,ajd'
+    - '&6[YT] ,,&6YT,k,tag.yt,yt,youtuber'
+    - '&1[BETA] ,,&1BETA,l,tag.beta,beta,betavip'
+    - '&b[VIP&6+&b] ,,&bVIP&6+&b,m,tag.vip+,vipplus,vip+'
+    - '&b[VIP] ,,&bVIP,n,tag.vip,vip,vipnormal'
+    - '&a[&fS&aVIP] ,,&a&fS&aVIP,o,tag.svip,semivip,svip'
+    - '&e[COPA&f+&e] ,,&eCOPA&f+&e,p,tag.copa+,copa+,copaplus'
+    - '&e[COPA] ,,&eCOPA,q,tag.copa,copa,tagcopa'
+    - '&7 ,,&7MEMBRO,r,none,membro,normal,default'
+# Mensagem quando o jogador executar /tag.
+# Use %tags% para indicar as tags que o jogador possui.
+TagCommandSintaxe:
+  Messages:
+  - '&cPara selecionar uma tag, utilize: /tag <nome da tag>'
+  - '&cTAGS: %tags%'
+# Mensagem ao detectar que o jogador nÃ£o possui permissÃ£o para a tag.
+# Use %tag% para indicar a tag que ele nÃ£o possui.
+TagCommandNoPermission:
+  Messages:
+  - '&cVoce nao possui a tag: %tag%'
+# Mensagem ao nÃ£o encontrar a tag solicitada.
+# Isto Ã©, um null pointer, ja previsto, e assim, sem erros.
+TagCommandNotFound:
+  Messages:
+  - '&cEsta tag nao foi encontrada.'
+# Mensagem quando o jogador alterar a tag.
+# Use %tag% para indicar a tag que ele alterou.
+TagCommandSucessChanged:
+  Messages:
+  - '&aSua tag foi alterada para: %tag%'
+# Mensagem quando a sintaxe do comando estiver errada.
+TagCommandErrorSintaxe:
+  Messages:
+  - '&cUtilize: /tag ou /tag <nome da tag>'
+# Mensagem quando nao permitir comandos no console
+CmdInConsole: '&cComando desativo Via Console'
+# Mensagem quando nao tiver permissao de comandos
+PermissionMsg: '&cVoce nao tem permissao para executar este comando.'
